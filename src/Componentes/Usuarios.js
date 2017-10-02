@@ -46,7 +46,6 @@ class Usuarios extends Component {
     componentWillMount() {
     //   axios.get('http://127.0.0.1:8000/api/user')
     axios.get('http://arq-soft-grupo1.herokuapp.com/api/user')
-
           .then(res => {
             const users = res.data;
             console.log(res.data);
