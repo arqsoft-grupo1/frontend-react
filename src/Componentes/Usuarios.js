@@ -109,7 +109,7 @@ class Usuarios extends Component {
                     enableSelectAll={this.state.enableSelectAll}
                   >
                     <TableRow>
-                      <TableHeaderColumn colSpan="3" tooltip="Lista de usuarios" style={{textAlign: 'center'}}>
+                      <TableHeaderColumn colSpan="3" tooltip="Lista de usuarioss" style={{textAlign: 'center'}}>
                         Lista de usuarios
                       </TableHeaderColumn>
                       <TableRow>
