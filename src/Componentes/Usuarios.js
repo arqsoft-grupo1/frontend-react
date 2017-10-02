@@ -44,18 +44,20 @@ class Usuarios extends Component {
     // se ejecuta antes de que el componente sea montado en el DOM
     // ref: https://medium.com/@pedroparra/react-js-y-el-ciclo-de-vida-de-los-componentes-5d083e5089c6
     componentWillMount() {
-      // axios.get('http://127.0.0.1:8000/api/user')
-      //     .then(res => {
-      //       const users = res.data;
-      //       console.log(res.data);
-      //       this.setState({ users });
-      //   });
-      axios.get('data.json')
+    //   axios.get('http://127.0.0.1:8000/api/user')
+    axios.get('http://arq-soft-grupo1.herokuapp.com/api/user')
+
           .then(res => {
             const users = res.data;
             console.log(res.data);
             this.setState({ users });
         });
+    //   axios.get('data.json')
+    //       .then(res => {
+    //         const users = res.data;
+    //         console.log(res.data);
+    //         this.setState({ users });
+    //     });
     }
 
     state = {
