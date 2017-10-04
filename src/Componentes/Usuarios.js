@@ -45,7 +45,7 @@ class Usuarios extends Component {
     // ref: https://medium.com/@pedroparra/react-js-y-el-ciclo-de-vida-de-los-componentes-5d083e5089c6
     componentWillMount() {
     //   axios.get('http://127.0.0.1:8000/api/user')
-    axios.get('http://arq-soft-grupo1.herokuapp.com/api/user')
+    axios.get('https://arq-soft-grupo1.herokuapp.com/api/user')
           .then(res => {
             const users = res.data;
             console.log(res.data);
